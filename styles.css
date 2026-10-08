@@ -144,7 +144,7 @@ ul,ol{list-style:none}
 }
 .dot-live{width:.5rem;height:.5rem;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:pulse 2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.55)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
-.hero h1{margin-top:1.4rem;font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:800;max-width:15ch;color:#fff;letter-spacing:-.03em}
+.hero h1{margin-top:0;font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:800;max-width:15ch;color:#fff;letter-spacing:-.03em}
 .hl{background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
 .hero-sub{margin-top:1.35rem;font-size:1.1rem;color:#b8c4e0;max-width:36rem}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.1rem}
@@ -465,7 +465,8 @@ a.info-val:hover{text-decoration:underline}
 .footer-links a{cursor:pointer;word-break:break-word}
 .footer-links a:hover{color:#fff}
 .selos{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.9rem}
-.selos img{height:2.6rem;width:auto;padding:.35rem .5rem;border-radius:.5rem;background:#fff}
+.selos{align-items:center;gap:1.1rem}
+.selos img{height:2.4rem;width:auto}
 .footer-bottom{padding-top:1.25rem;padding-bottom:1.5rem;border-top:1px solid rgba(255,255,255,.08);font-size:.8rem;color:#7f90b3}
 
 /* ==== Floating WhatsApp ==== */
@@ -538,9 +539,14 @@ a.info-val:hover{text-decoration:underline}
     margin:1.5rem -1rem 0;padding:.5rem 1rem 1.25rem;scroll-padding:0 1rem;scrollbar-width:none;
   }
   .products-grid::-webkit-scrollbar{display:none}
-  .products-grid{align-items:flex-start}
+  .products-grid{align-items:stretch}
   .product{flex:0 0 86%;scroll-snap-align:center}
-  .product-foot{margin-top:0}
+  .product-tagline{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+  .product-highlights{max-height:1.75rem;overflow:hidden}
+  .product-summary{margin-top:.9rem;padding:.2rem .85rem}
+  .product-summary div{grid-template-columns:5.4rem 1fr;gap:.6rem;padding:.5rem 0;font-size:.76rem}
+  .product-summary div:last-child{display:none}
+  .product-summary div:nth-last-child(2){border-bottom:0}
   .product:hover,.product.reveal.in:hover{transform:none}
   .product-media{aspect-ratio:5/4}
   .product-desc{display:none}

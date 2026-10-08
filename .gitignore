@@ -44,3 +44,5 @@ node_modules/
 *.log
 _frame_tmp.html
 _probe_tmp.html
+/assets/selo-google.png
+/assets/selo-ssl.webp
