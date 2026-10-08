@@ -169,5 +169,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`TizerpatidaCuritiba rodando em http://localhost:${PORT}`);
+  console.log(`TirzepatidaCuritiba rodando em http://localhost:${PORT}`);
 });

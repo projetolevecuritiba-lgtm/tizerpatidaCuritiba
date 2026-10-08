@@ -1,4 +1,4 @@
-/* ===== TizerpatidaCuritiba - static JS ===== */
+/* ===== TirzepatidaCuritiba - static JS ===== */
 const WHATSAPP = "";
 const waLink = (msg) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 
